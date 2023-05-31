@@ -4,11 +4,11 @@
 
 
 ## Components
-| Components | Quantity | Cost |
-| - - - - - - - - - - - - - - - - |
-| - - - - -  | - - - -  | - -  |
-|
 
+| Components | Quantity |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 ## Schematic
 Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
