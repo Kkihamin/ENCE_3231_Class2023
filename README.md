@@ -13,6 +13,8 @@
 | STM32F discovery board  | 1  |
 | Wires  | 14  |
 
+The table above shows all the components used in my final project which is the Fridge Alarm system.
+
 
 
 ## Schematic
