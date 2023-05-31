@@ -4,7 +4,7 @@
 
 
 ### Components
-1.  PUI Audio AST-030C0MR-R
+1.  PUI Audio AST-030C0MR-R(Piezo Buzzer)
 2.  100 ohm Resistor
 3.  Green LED
 4.  STM32F4 discovery board
