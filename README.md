@@ -34,6 +34,13 @@ The Schematic of the Fridge Alarm is shown in Kicad below:
 
 
 ## Shield Development
+Below I have included a picture of the shield for my fridge door alarm routed and in 3-D view. The only thing is that I created my own library for the HRC-SR501 motion sensor so the pins on the custom component in my custom library does not route on the board physically so I routed the pins on the sensor as close to the components as possible.
+
+
+<img width="640" alt="Fridge Alarm shield routed" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/60b76068-9eff-4f5c-8d8a-44da0c70ee44">
+
+<img width="632" alt="Fridge Alarm shield in 3-D viewer" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/74496266-a34e-4079-9010-0ca3426bcf84">
+
 
 
 ## Software Development
