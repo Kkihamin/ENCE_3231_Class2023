@@ -1,9 +1,9 @@
 # ENCE_3231_Class2023 Phase D
 
-### Introduction of Project
+## Introduction of Project
 
 
-### Components
+## Components
 1.  PUI Audio AST-030C0MR-R(Piezo Buzzer)
 2.  100 ohm Resistor
 3.  Green LED
@@ -11,23 +11,23 @@
 5.  wires
 
 
-### Schematic
+## Schematic
 Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
 
 ![Block diagram and schematic of the project on paper](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/972aabb5-46ca-44a3-a927-305a9333196c)
 
 
-### Shield Development
+## Shield Development
 
 
-### Software Development
+## Software Development
 
 
-### Demonstration
+## Demonstration
 
 
 
-### Future Developments
+## Future Developments
 
 
 
