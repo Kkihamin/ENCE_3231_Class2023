@@ -5,7 +5,7 @@
 
 ## Components
 | Components | Quantity | Cost |
-- - - - - - - - - - - - - - - - 
+| - - - - - - - - - - - - - - - - |
 | - - - - -  | - - - -  | - -  |
 |
 
