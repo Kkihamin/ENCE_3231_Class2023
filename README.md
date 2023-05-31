@@ -7,8 +7,13 @@
 
 | Components | Quantity |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| AST-030C0MR-R passive Buzzer  | 1  |
+| Green LED  | 1  |
+| 100 ohm resistor  | 1 |
+| STM32F discovery board  | 1  |
+| Wires  | 14  |
+
+
 
 ## Schematic
 Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
