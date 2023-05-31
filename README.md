@@ -12,7 +12,7 @@
 
 
 ### Schematic
-Below is the Schematic on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
+Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
 
 ![Block diagram and schematic of the project on paper](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/972aabb5-46ca-44a3-a927-305a9333196c)
 
