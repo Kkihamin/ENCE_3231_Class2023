@@ -12,6 +12,9 @@
 
 
 ### Schematic
+Below is the Schematic on paper:
+
+![Block diagram and schematic of the project on paper](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/972aabb5-46ca-44a3-a927-305a9333196c)
 
 
 ### Shield Development
