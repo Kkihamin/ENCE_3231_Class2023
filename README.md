@@ -1,6 +1,7 @@
 # ENCE_3231_Class2023 Phase D
 
 ## Introduction of Project
+  The inspiration initially for the final project in this class was I was researching on the internet for ideas on projects that are beneficial in my daily life and achievable in three weeks even if there are complications during the process of the project. Then, I came across a fridge alarm circuit on the internet and I thought this was a good project idea that was not too difficult to achieve in three weeks and this project could be meaningful because if someone forgets to close there refridgerator this circuit could tell them through a sound from a buzzer that the refridgerator door is open.
 
 
 ## Components
