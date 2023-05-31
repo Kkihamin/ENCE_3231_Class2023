@@ -3,7 +3,10 @@
 ## Introduction of Project
   The inspiration initially for the final project in this class was I was researching on the internet for ideas on projects that are beneficial in my daily life and achievable in three weeks even if there are complications during the process of the project. Then, I came across a fridge alarm circuit on the internet and I thought this was a good project idea that was not too difficult to achieve in three weeks and this project could be meaningful because if someone forgets to close there refridgerator this circuit could tell them through a sound from a buzzer that the refridgerator door is open.
   The original circuit that internet provided which is given below was way too complex for three weeks because there were some challenges of implementing the original circuit. First, it was implemented on Arduino instead of the stm32cubeide that I needed to use. Second, there were two timer ic chips which it would take some time to understand to incorporate in the ide. Third, the 9 volts needed for the ic chips are not able to be provided by the voltage on the stm32F4 discovery board and I did not know how to interface a battery with the STM32F4 discovery board. This is why I made the project simplier to be able to accomplish the project in three weeks.
-  
+
+
+  ![Original idea of Fridge Alarm complex version](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/3b963f1e-0243-41cf-ae86-a226dfe16fd2)
+
 
 
 ## Components
