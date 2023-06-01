@@ -47,42 +47,15 @@ Below I have included a picture of the shield for my fridge door alarm routed an
 
 ## Software Development
 The main code for the Fridge door alarm is listed below
-'''int main(void)
-{
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_TIM1_Init();
-  MX_TIM2_Init();
-  MX_BUZZER_Init();
-  /* USER CODE BEGIN 2 */
-
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+'''int main(void){
+    HAL_Init();
+    SystemClock_Config();
+     MX_GPIO_Init();
+     MX_TIM1_Init();
+     MX_TIM2_Init();
+     MX_BUZZER_Init();
+     while (1)
+     {
 
 	  if(gISR_Flag_PIR){
 		  HAL_GPIO_WritePin(gLED_PIN_PORT, gLED_PIN, SET); // Turn on LED
@@ -96,11 +69,8 @@ The main code for the Fridge door alarm is listed below
 	  }
 
 
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
+ 
+      }
 }'''
 
 
