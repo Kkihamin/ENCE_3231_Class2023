@@ -76,10 +76,16 @@ The main code for the Fridge door alarm is listed below
 
 
 ## Demonstration
+Below is a image and video recording of the Fridge door alarm being demonstrated on a breadboard that when the motion sensor detects motion the Green LED lights up and the buzzer sounds
 
+![Demonstration of Project on STM32F4 discovery board](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/61a01720-c5b8-48dd-98ba-2d21ec2fcb05)
+
+
+![img-2632](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/ebe2cafd-89f8-4590-975f-c900dca4e63a)
 
 
 ## Future Developments
+This project can definitely be developed further to be more efficient and accurate because my current demonstration is not the best cause the environment affects the motion sensor and makes it adapt and unless the white part of the ensor is completely covered to limit the range it will not be as accurate.
 
 
 
