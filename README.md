@@ -24,26 +24,85 @@ The table above shows all the components used in my final project which is the F
 
 
 ## Schematic
-Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11:
+Below is the Schematic and flowchart of the code on paper the only thing that needs to change is the buzzer should be using pin PE9 instead of PB11 and there is no Timer2:
 
 ![Block diagram and schematic of the project on paper](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/972aabb5-46ca-44a3-a927-305a9333196c)
 
 The Schematic of the Fridge Alarm is shown in Kicad below:
 
-<img width="899" alt="Schematic of Fridge Alarm" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/9cff771e-7d96-4b72-b1e9-3db029bccae1">
+<img width="892" alt="Schematic of Fridge Alarm" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/e621cda8-ecd6-4ac5-a9fd-d5485eaf0609">
+
 
 
 ## Shield Development
-Below I have included a picture of the shield for my fridge door alarm routed and in 3-D view. The only thing is that I created my own library for the HRC-SR501 motion sensor so the pins on the custom component in my custom library does not route on the board physically so I routed the pins on the sensor as close to the components as possible.
+Below I have included a picture of the shield for my fridge door alarm routed and in 3-D view. The only thing is that I created my own library for the HRC-SR501 motion sensor so the pins on the custom component in my custom library and at first I didn't know why they were not routing and figured out that the pins needed pin numbers so they can actually route.
+
+<img width="657" alt="Fridge Alarm shield routed" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/8635f890-39af-44a3-b17e-615862891943">
 
 
-<img width="640" alt="Fridge Alarm shield routed" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/60b76068-9eff-4f5c-8d8a-44da0c70ee44">
+<img width="525" alt="Fridge Alarm shield in 3-D viewer" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/5334bf13-c07d-4797-a6be-75fe319be492">
 
-<img width="632" alt="Fridge Alarm shield in 3-D viewer" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/74496266-a34e-4079-9010-0ca3426bcf84">
 
 
 
 ## Software Development
+The main code for the Fridge door alarm is listed below
+'''int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_TIM1_Init();
+  MX_TIM2_Init();
+  MX_BUZZER_Init();
+  /* USER CODE BEGIN 2 */
+
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+
+	  if(gISR_Flag_PIR){
+		  HAL_GPIO_WritePin(gLED_PIN_PORT, gLED_PIN, SET); // Turn on LED
+		 // HAL_GPIO_WritePin(BUZZER_PIN_PORT, BUZZER_PIN, SET); // Turn on buzzer
+		  HAL_TIM_PWM_Start(&htim1, gBUZZER_TIM_CHANNEL);
+		  HAL_Delay(1000); // Delay for 1 second
+		  //HAL_GPIO_WritePin(BUZZER_PIN_PORT, BUZZER_PIN, RESET); // Turn off buzzer
+		  HAL_TIM_PWM_Stop(&htim1, gBUZZER_TIM_CHANNEL);
+		  HAL_GPIO_WritePin(gLED_PIN_PORT, gLED_PIN, RESET); // Turn off LED
+		  gISR_Flag_PIR = 0; // Reset the motion detection flag
+	  }
+
+
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}'''
+
 
 
 ## Demonstration
