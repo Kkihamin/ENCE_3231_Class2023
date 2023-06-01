@@ -81,7 +81,7 @@ Below is a image and video recording of the Fridge door alarm being demonstrated
 ![Demonstration of Project on STM32F4 discovery board](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/61a01720-c5b8-48dd-98ba-2d21ec2fcb05)
 
 
-![img-2632](https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/ebe2cafd-89f8-4590-975f-c900dca4e63a)
+
 
 
 ## Future Developments
