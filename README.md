@@ -84,6 +84,7 @@ Below is a image and video recording of the Fridge door alarm being demonstrated
 
 
 
+
 ## Future Developments
 This project can definitely be developed further to be more efficient and accurate because my current demonstration is not the best cause the environment affects the motion sensor and makes it adapt and unless the white part of the ensor is completely covered to limit the range it will not be as accurate.
 
