@@ -17,7 +17,7 @@
 | Green LED  | 1  |
 | 100 ohm resistor  | 1 |
 | STM32F discovery board  | 1  |
-| Wires  | 14  |
+| HRC-SR501 Motion Sensor | 1  |
 
 The table above shows all the components used in my final project which is the Fridge Alarm system.
 
@@ -47,6 +47,9 @@ Below I have included a picture of the shield for my fridge door alarm routed an
 
 ## Software Development
 The main code for the Fridge door alarm is listed below
+<img width="767" alt="Flowchart of code" src="https://github.com/Kkihamin/ENCE_3231_Class2023/assets/129350322/5ab52ff1-b889-46fc-82d0-55a3c45986f7">
+
+
 '''int main(void){
     HAL_Init();
     SystemClock_Config();
